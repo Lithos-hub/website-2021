@@ -1,0 +1,39 @@
+// Font families
+
+$style1: 'Khand', sans-serif;
+$style2: 'IM Fell French Canon SC', serif;
+$style3: 'Parisienne', cursive;
+$style4: 'Nanum Myeongjo', serif;
+$style5: 'Share Tech Mono', monospace;
+$style6: 'Roboto Condensed', sans-serif;
+$style7: 'Palanquin', sans-serif;
+
+
+// Font sizes (responsive)
+
+$mobile: 2em;
+$laptop: 10em;
+$desktop: 17em;
+
+// Colors
+
+$primary: rgb(0, 222, 230);
+$secondary: rgb(0, 47, 109);
+$tertiary: rgb(34, 141, 155);
+$background_dark: #151515;
+$background_light: radial-gradient(circle, rgb(138, 138, 138) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+$lightmode: #303030;
+
+
+// gradient
+
+$gradient1: -webkit-linear-gradient(45deg, #654c88, #38a9b1, #13c294);
+$gradient2: -webkit-linear-gradient(45deg, #b4ceff, #4a64bb, #6c30a9);
+$gradient3: -webkit-linear-gradient(45deg, #c4d3ee, #3ca3aa, #30a9a3);
+$gradient4: -webkit-linear-gradient(45deg, #caf1ff, #80a8ff, #309da9);
+
+// Font sizes
+
+$h1_mobile: 18px;
+$large_btn_mobile: 1em;
+$large_btn_laptop: 20px;

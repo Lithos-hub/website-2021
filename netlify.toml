@@ -1,0 +1,10 @@
+
+[build]
+  command = "lithos build"
+  functions = "functions"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
