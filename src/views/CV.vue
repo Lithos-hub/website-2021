@@ -266,9 +266,9 @@ export default {
       timeline: false,
       curriculum: false,
       showtimeline: `Show developer timeline`,
-      hidetimeline: "Hide this",
-      showcv: "Show curriculum",
-      hidecv: "Hide curriculum",
+      hidetimeline: "Hide timeline",
+      showcv: "Show CV",
+      hidecv: "Hide CV",
       comp_education: [
         "Cloud Computing (Google Actívate).",
         "Mobile App Development (Google Actívate).",
