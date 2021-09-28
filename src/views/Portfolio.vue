@@ -75,6 +75,7 @@
               <v-img
                 class="card-img white--text align-end"
                 :src="item.img">
+                <div v-if="item.isNew" class="new-img-badge">NEW</div>
               </v-img>
                 <h2 class="card-title">{{item.name}}</h2> 
                <v-row>
@@ -160,23 +161,33 @@ export default {
     hideapps: "Hide apps",
     selectedItem: 1,
     designs_cards: [
-      {name: "Blog", 
+      {
+      isNew: false,
+      name: "Blog", 
       subtitle: "A simple misellaneous blog design", 
       link: "https://blog-mainsite.netlify.app", 
       img: require("../assets/img/blog-design.jpg")},
-      {name: "IT Company", 
+      {
+      isNew: false,
+      name: "IT Company", 
       subtitle: "Technology company main website", 
       link: "https://it-company-mainsite.netlify.app/", 
       img: require("../assets/img/kraken-design.jpg")},
-      {name: "Travel Agency", 
+      {
+      isNew: false,
+      name: "Travel Agency", 
       subtitle: "Travel agency main website", 
       link: "https://travel-agency-mainsite.netlify.app/", 
       img: require("../assets/img/travel-design.jpg")},
-      {name: "Product", 
+      {
+      isNew: false,
+      name: "Product", 
       subtitle: "Smartphone model main website", 
       link: "https://product-mainsite.netlify.app/", 
       img: require("../assets/img/smartphone-design.jpg")},
-      {name: "NGO", 
+      {
+      isNew: false,
+      name: "NGO", 
       subtitle: "NGO main website", 
       link: "https://ngo-mainsite.netlify.app/", 
       img: require("../assets/img/ngo-design.jpg")},
@@ -184,7 +195,9 @@ export default {
     apps_cards: {
       group1: [
 
-      {name: "Matrix Raining Code",
+      {
+      isNew: true,
+      name: "Matrix Raining Code",
       tech_icons: [
         {techname: "Vuejs", techicon: "mdi-vuejs",},
         {techname: "HTML", techicon: "mdi-language-html5",},
@@ -196,7 +209,9 @@ export default {
       link: "https://matrixrainingcode.netlify.app/", 
       img: require("../assets/img/apps-img/matrix.jpg",)},
 
-      {name: "PokéAPP",
+      {
+      isNew: false,
+      name: "PokéAPP",
       tech_icons: [
         {techname: "HTML", techicon: "mdi-language-html5",},
         {techname: "CSS", techicon: "mdi-language-css3",},
@@ -208,7 +223,9 @@ export default {
       link: "https://pokeapp-app.netlify.app/", 
       img: require("../assets/img/apps-img/pokeapp-logo.jpg",)},
 
-      {name: "iVitae",
+      {
+      isNew: false,
+      name: "iVitae",
       tech_icons: [
         {techname: "Vuejs", techicon: "mdi-vuejs",},
         {techname: "HTML", techicon: "mdi-language-html5",},
@@ -221,7 +238,9 @@ export default {
       link: "https://ivitae.netlify.app/", 
       img: require("../assets/img/apps-img/ivitae-bar.jpg",)},
 
-      {name: "iMovies",
+      {
+      isNew: false,
+      name: "iMovies",
       tech_icons: [
         {techname: "Vuejs", techicon: "mdi-vuejs",},
         {techname: "API", techicon: "mdi-api",},
@@ -236,7 +255,9 @@ export default {
       link: "https://imovies-app.netlify.app/", 
       img: require("../assets/img/apps-img/imovies-bar.jpg")},
 
-      {name: "iRead", 
+      {
+      isNew: false,
+      name: "iRead", 
       tech_icons: [
         {techname: "Vuejs", techicon: "mdi-vuejs",},
         {techname: "API", techicon: "mdi-api",},
@@ -254,7 +275,9 @@ export default {
       ],
       group2: [
 
-      {name: "iDash",
+      {
+      isNew: false,
+      name: "iDash",
       tech_icons: [
         {techname: "Vuejs", techicon: "mdi-vuejs",},
         {techname: "API", techicon: "mdi-api",},
@@ -269,7 +292,9 @@ export default {
       link: "https://idash.netlify.app/", 
       img: require("../assets/img/apps-img/idash-bar.jpg")},
 
-      {name: "Auth system #1",
+      {
+      isNew: false,
+      name: "Auth system #1",
       tech_icons: [
         {techname: "Vuejs", techicon: "mdi-vuejs",},
         {techname: "HTML", techicon: "mdi-language-html5",},
@@ -281,7 +306,9 @@ export default {
       link: "https://localstorage-auth-app.netlify.app/", 
       img: require("../assets/img/apps-img/auth1-bar.jpg")},
 
-      {name: "Auth system #2",
+      {
+      isNew: false,
+      name: "Auth system #2",
       tech_icons: [
         {techname: "Vuejs", techicon: "mdi-vuejs",},
         {techname: "HTML", techicon: "mdi-language-html5",},
@@ -395,8 +422,6 @@ export default {
   transition: 0.3s ease-in-out;
 }
 
-
-
 .seemore-btn-dark:hover {
  background: transparent !important;
   box-shadow: 0px 0px 10px aqua;
@@ -449,6 +474,11 @@ background-clip: text;
     cursor: pointer;
     background: none;
 
+    .new-img-badge {
+      transition: all 1s ease-out;
+      left: 2em;
+    } 
+
     .card-title {
     color: white;
     text-shadow: 0px 0px 20px cyan;
@@ -492,6 +522,11 @@ background-clip: text;
     cursor: pointer;
     background: none;
 
+    .new-img-badge {
+    transition: all 1s ease-out;
+    left: 2em;
+    } 
+
     .card-title {
     color: black;
     text-shadow: 0px 0px 20px black;
@@ -511,6 +546,23 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     }
   }
+}
+
+.new-img-badge {
+  transition: all 1s ease-out;
+  position: absolute;
+  bottom: 0.5em;
+  left: 0em;
+  transform: rotate(45deg);
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: white;
+  animation: pulse 0.8s ease-in-out infinite alternate-reverse;
+} 
+
+@keyframes pulse {
+  from{opacity: 0.5; color: white; text-shadow: none}
+  to{opacity: 1; color: white; text-shadow: 0px 0px 20px $primary, 0px 0px 10px white;}
 }
 
 
