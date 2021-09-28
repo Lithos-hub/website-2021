@@ -112,8 +112,9 @@
           >In: Grupo CMC.</small
         >
         <ul style="list-style: none" class="ml-5">
-          <li class="cv-p-li"> <v-icon class="cv-check-icon">mdi-check</v-icon>Development and maintenance of web applications.</li>
+          <li class="cv-p-li"> <v-icon class="cv-check-icon">mdi-check</v-icon>Front-end APPs development and maintenance.</li>
           <li class="cv-p-li"> <v-icon class="cv-check-icon">mdi-check</v-icon>Agile methodologies.</li>
+          <li class="cv-p-li"> <v-icon class="cv-check-icon">mdi-check</v-icon>GitFlow.</li>
         </ul>
         <!-- ****************************************** -->
         <h3> <span class="cv-h3">2015 - 2020</span></h3>
@@ -227,8 +228,6 @@
             <p class="text-center">https://stackoverflow.com/cv/carlos-segura</p>
           </a>
           <v-divider></v-divider>
-          <v-icon class="cv-icons">mdi-cake-variant</v-icon>
-          <p class="d-block text-center">Birthdate: 10 August 1992</p>
           <v-icon class="cv-icons">mdi-home</v-icon>
           <p class="d-block text-center">Based in Madrid</p>
           <v-icon class="cv-icons">mdi-car</v-icon>
@@ -295,19 +294,20 @@ export default {
         "Visual Studio 2019",
       ],
       technologies: [
+        "Vue.js",
+        "Vuetify",
+        "HTML",
+        "CSS / SCSS",
+        "Modern JavaScript",
+        "Git (GitFlow)",
+        "Bootstrap 5",
         "Python",
         "C#",
-        "Vue.js",
-        "Angular 10",
-        "HTML",
-        "CSS",
-        "SASS",
-        "JavaScript",
+        "Java",
         "TypeScript",
-        "Git",
+        "Angular 10",
         "MySQL",
         "Wordpress",
-        "Bootstrap 5",
       ],
       timeline_items: [
         {

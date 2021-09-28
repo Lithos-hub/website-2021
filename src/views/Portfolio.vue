@@ -184,6 +184,18 @@ export default {
     apps_cards: {
       group1: [
 
+      {name: "Matrix Raining Code",
+      tech_icons: [
+        {techname: "Vuejs", techicon: "mdi-vuejs",},
+        {techname: "HTML", techicon: "mdi-language-html5",},
+        {techname: "CSS", techicon: "mdi-language-css3",},
+        {techname: "JavaScript", techicon: "mdi-language-javascript",},
+        {techname: "SASS", techicon: "mdi-sass",},
+        ], 
+      subtitle: "A Matrix Raining Code Simulator", 
+      link: "https://matrixrainingcode.netlify.app/", 
+      img: require("../assets/img/apps-img/matrix.jpg",)},
+
       {name: "PokéAPP",
       tech_icons: [
         {techname: "HTML", techicon: "mdi-language-html5",},
@@ -688,7 +700,7 @@ visibility: visible;
   margin-top: 1rem;
   overflow: hidden;
   background: #181818;
-  height: 35rem;
+  height: 30rem;
   width: 100%;
   transition: 1s ease-in-out;
   padding: 10px;
@@ -798,7 +810,7 @@ visibility: visible;
   margin-top: 1rem;
   overflow: hidden;
   background: #181818;
-  height: 45rem;
+  height: 40rem;
   width: 100%;
   transition: 1s ease-in-out;
   padding: 10px;
