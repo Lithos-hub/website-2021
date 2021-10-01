@@ -49,23 +49,23 @@ export default {
         loader.style.opacity = "1";
       }
     },
-    showAlert() {
-      let sBrowser,
-        sUsrAg = navigator.userAgent;
-      if (sUsrAg.indexOf("Firefox") > -1) {
-        sBrowser = "Mozilla Firefox";
-        alert(
-          "Oops. You are using Mozilla Firefox. In order to see this site properly, use a Chrome Based Navigator like Chrome, Microsoft Edge, Chromium, Brave Browser, etc."
-        );
-      } else {
-        return;
-      }
-    },
+    // showAlert() {
+    //   let sBrowser,
+    //     sUsrAg = navigator.userAgent;
+    //   if (sUsrAg.indexOf("Firefox") > -1) {
+    //     sBrowser = "Mozilla Firefox";
+    //     alert(
+    //       "Oops. You are using Mozilla Firefox. In order to see this site properly, use a Chrome Based Navigator like Chrome, Microsoft Edge, Chromium, Brave Browser, etc."
+    //     );
+    //   } else {
+    //     return;
+    //   }
+    // },
   },
   mounted() {
     this.startLoading();
     this.showScrollBar();
-    this.showAlert();
+    // this.showAlert();
     this.load();
   },
 };
