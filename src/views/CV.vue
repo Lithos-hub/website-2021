@@ -252,7 +252,7 @@
           >
         </v-col>
         <v-col lg="4" cols="12" class="text-center">
-          <h1 class="cv-h1">Main technologies I work with</h1>
+          <h1 class="cv-h1">Main technologies <br> I work with</h1>
           <v-card dark>
             <v-list-item v-for="(item, i) in technologies" :key="'D' + i" dense>
               <v-list-item-content>
