@@ -288,7 +288,7 @@
               <v-row no-gutters>
                 <v-col v-for="(item, i) in learning_now" :key="'B2' + i">
                   <v-list-item-content>
-                    <v-list-item-title>
+                    <v-list-item-title class="text-center">
                       <v-icon class="cv-cog-icon">mdi-cog</v-icon>
                       <span class="learning-now">{{ item }}</span>
                     </v-list-item-title>
@@ -389,11 +389,8 @@ export default {
         'Python 3 course (Udemy).',
       ],
       learning_now: [
-        'Vue 3',
+        'Vue 3 + Vite + Pinia',
         'Google Firebase',
-        'TypeScript',
-        'AWS Certified Cloud Practitioner',
-        'MEVN Stack (MongoDB, Express, Vue, Node)',
       ],
       software: [
         'Adobe InDesign',
@@ -405,7 +402,7 @@ export default {
       ],
       technologies: [
         'Vue + HTML, CSS/SCSS and JavaScript',
-        'Vuetify',
+        'Vuetify / CSS Vanilla',
         'Git (GitFlow methodology)',
         'Google Firebase',
         'Google Cloud (Google App Engine)',
@@ -503,7 +500,7 @@ export default {
           title:
             'Bootstrap 4. De 0 a experto. Curso completo + Formularios con PHP',
           period: 'OCT. 2020 - NOV. 2020',
-          text: 'In parallel to the Vuejs course, I was also taking this other one. Bootstrap is, without a doubt, the most powerful CSS framework I have ever known. In this course I saw in depth all the components and possibilities that Bootstrap offers. The course also has extra content oriented to the creation of forms with PHP and an introduction to SASS.',
+          text: 'In parallel to the Vuejs course, I was also taking this other one. Bootstrap is, without a doubt, the most powerful CSS framework I have ever known. In this course I saw in depth all the components and possibilities that Bootstrap offers. The course also has extra content oriented to the creation of forms with PHP and an introduction to SCSS.',
           certificate:
             'https://www.udemy.com/certificate/UC-479d142f-0f8f-446c-89ce-5f8fabf03189/',
         },
